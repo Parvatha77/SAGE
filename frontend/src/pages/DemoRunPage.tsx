@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react"
-
-const API = "http://localhost:8000"
+import { API_URL } from "../api/config"
 
 type EventRow = {
   seq: number
@@ -87,13 +86,13 @@ export function DemoRunPage() {
     esRef.current?.close()
 
     try {
-      const res = await fetch(`${API}/demo/run`, { method: "POST" })
+      const res = await fetch(`${API_URL}/demo/run`, { method: "POST" })
       if (!res.ok) throw new Error(await res.text())
       const data = await res.json()
       setRunId(data.run_id)
       setResetInfo({ papers: data.demo_papers, cases: data.reset?.cases ?? 0 })
 
-      const es = new EventSource(`${API}/demo/run/${data.run_id}/stream`)
+      const es = new EventSource(`${API_URL}/demo/run/${data.run_id}/stream`)
       esRef.current = es
 
       es.onmessage = (e) => {

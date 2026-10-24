@@ -3,6 +3,7 @@
  * Supports UC1 (discovery → action) and UC2 (need_intake → tracker).
  */
 import React, { useCallback, useEffect, useReducer, useRef, useState } from "react"
+import { API_URL } from "../api/config"
 import type { RunEvent, RunSummary, AgentGraphKind } from "../api/types"
 
 // ---------------------------------------------------------------------------
@@ -393,16 +394,14 @@ function SummaryCard({ summary, onRunAgain, onClear }: {
 // Main component
 // ---------------------------------------------------------------------------
 
-const API_BASE = import.meta.env.VITE_API_BASE ?? "http://localhost:8000"
-
 async function fetchEvents(runId: string, after: number): Promise<RunEvent[]> {
-  const res = await fetch(`${API_BASE}/runs/${runId}/events?after=${after}`)
+  const res = await fetch(`${API_URL}/runs/${runId}/events?after=${after}`)
   if (!res.ok) return []
   return res.json()
 }
 
 async function fetchSummary(runId: string): Promise<RunSummary | null> {
-  const res = await fetch(`${API_BASE}/runs/${runId}/summary`)
+  const res = await fetch(`${API_URL}/runs/${runId}/summary`)
   if (!res.ok) return null
   return res.json()
 }
@@ -453,7 +452,7 @@ export function AgentRunView({ runId, kind, onClose }: AgentRunViewProps) {
 
     // Try SSE first
     try {
-      const es = new EventSource(`${API_BASE}/runs/${runId}/stream`)
+      const es = new EventSource(`${API_URL}/runs/${runId}/stream`)
       sseRef.current = es
       es.onmessage = (msg) => {
         try {
@@ -480,7 +479,7 @@ export function AgentRunView({ runId, kind, onClose }: AgentRunViewProps) {
         const events = await fetchEvents(runId, lastSeq.current)
         events.forEach(applyEvent)
         // Check if done
-        const res = await fetch(`${API_BASE}/runs/${runId}`)
+        const res = await fetch(`${API_URL}/runs/${runId}`)
         if (res.ok) {
           const run = await res.json()
           if (run.status === "done" || run.status === "error") {

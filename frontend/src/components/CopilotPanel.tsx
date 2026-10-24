@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { API_URL } from "../api/config"
 
 interface ToolCall {
   type: "started" | "result"
@@ -40,7 +41,7 @@ export function CopilotPanel({ caseId, isOpen, onClose }: CopilotPanelProps) {
 
     try {
       const response = await fetch(
-        `http://localhost:8000/copilot/reason?case_id=${caseId}&query=${encodeURIComponent(currentQuery)}&nocache=${Date.now()}`,
+        `${API_URL}/copilot/reason?case_id=${caseId}&query=${encodeURIComponent(currentQuery)}&nocache=${Date.now()}`,
         { method: "POST" }
       )
 

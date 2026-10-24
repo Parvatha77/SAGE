@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-
-const API = "http://localhost:8000"
+import { API_URL } from "../api/config"
 
 // ── Types ──────────────────────────────────────────────────────────────────
 
@@ -52,7 +51,7 @@ interface NeedDetail extends Need {
 // ── Helpers ────────────────────────────────────────────────────────────────
 
 async function api<T>(path: string, opts?: RequestInit): Promise<T> {
-  const r = await fetch(`${API}${path}`, opts)
+  const r = await fetch(`${API_URL}${path}`, opts)
   if (!r.ok) throw new Error(await r.text())
   return r.json()
 }

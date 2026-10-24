@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import { getCases, getCase, startDemoRun } from "../api/client"
+import { API_URL } from "../api/config"
 import type { CaseListItem, CaseDetail } from "../api/types"
 
 interface MonitorProps {
@@ -47,7 +48,7 @@ export function Monitor({ onCopilot }: MonitorProps) {
       console.log("Demo run started:", run)
 
       // Stream SSE events using fetch
-      const response = await fetch(`http://localhost:8000/demo/run/${run.run_id}/stream`)
+      const response = await fetch(`${API_URL}/demo/run/${run.run_id}/stream`)
       if (!response.body) throw new Error("No response body")
 
       const reader = response.body.getReader()
