@@ -2,7 +2,7 @@
  * AgentRunView — live animated visualisation of a pipeline agent run.
  * Supports UC1 (discovery → action) and UC2 (need_intake → tracker).
  */
-import React, { useCallback, useEffect, useReducer, useRef, useState } from "react"
+import { useCallback, useEffect, useReducer, useRef } from "react"
 import { API_URL } from "../api/config"
 import type { RunEvent, RunSummary, AgentGraphKind } from "../api/types"
 
@@ -150,11 +150,6 @@ function stateIcon(s: NodeState) {
   if (s === "failed")  return "✕"
   if (s === "running") return "⟳"
   return ""
-}
-
-function formatMs(ms: number | null) {
-  if (ms == null) return ""
-  return ms < 1000 ? `${ms}ms` : `${(ms / 1000).toFixed(1)}s`
 }
 
 // ---------------------------------------------------------------------------
@@ -419,7 +414,7 @@ export function AgentRunView({ runId, kind, onClose }: AgentRunViewProps) {
       : false
 
   const [state, dispatch] = useReducer(reducer, {
-    nodeStates: {}, nodeMessages: {}, traversedEdges: new Set(),
+    nodeStates: {}, nodeMessages: {}, traversedEdges: new Set<string>(),
     events: [], summary: null, elapsed: 0, done: false,
   })
 

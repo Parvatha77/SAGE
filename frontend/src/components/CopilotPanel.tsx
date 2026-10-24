@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { API_URL } from "../api/config"
 
 interface ToolCall {
@@ -99,6 +99,17 @@ export function CopilotPanel({ caseId, isOpen, onClose }: CopilotPanelProps) {
   if (!isOpen) return null
 
   return (
+    <>
+    <style>{`
+      @keyframes slideIn {
+        from { transform: translateX(100%); }
+        to { transform: translateX(0); }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.5; }
+      }
+    `}</style>
     <div style={{
       position: "fixed",
       right: 0,
@@ -111,11 +122,7 @@ export function CopilotPanel({ caseId, isOpen, onClose }: CopilotPanelProps) {
       zIndex: 1000,
       display: "flex",
       flexDirection: "column",
-      animation: "slideIn 0.3s ease-out",
-      "@keyframes slideIn": {
-        from: { transform: "translateX(100%)" },
-        to: { transform: "translateX(0)" }
-      }
+      animation: "slideIn 0.3s ease-out"
     }}>
       {/* Header */}
       <div style={{
@@ -171,11 +178,7 @@ export function CopilotPanel({ caseId, isOpen, onClose }: CopilotPanelProps) {
                 height: "12px",
                 borderRadius: "50%",
                 background: "#4a90e2",
-                animation: "pulse 1s infinite",
-                "@keyframes pulse": {
-                  "0%, 100%": { opacity: 1 },
-                  "50%": { opacity: 0.5 }
-                }
+                animation: "pulse 1s infinite"
               }} />
               <strong>Agent is working...</strong>
             </div>
@@ -356,5 +359,6 @@ export function CopilotPanel({ caseId, isOpen, onClose }: CopilotPanelProps) {
         </div>
       )}
     </div>
+    </>
   )
 }

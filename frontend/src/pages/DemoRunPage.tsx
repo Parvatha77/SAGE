@@ -38,7 +38,6 @@ const NODE_DESCRIPTION: Record<string, string> = {
 
 export function DemoRunPage() {
   const [running, setRunning] = useState(false)
-  const [runId, setRunId] = useState<string | null>(null)
   const [events, setEvents] = useState<EventRow[]>([])
   const [done, setDone] = useState(false)
   const [casesCreated, setCasesCreated] = useState(0)
@@ -89,7 +88,6 @@ export function DemoRunPage() {
       const res = await fetch(`${API_URL}/demo/run`, { method: "POST" })
       if (!res.ok) throw new Error(await res.text())
       const data = await res.json()
-      setRunId(data.run_id)
       setResetInfo({ papers: data.demo_papers, cases: data.reset?.cases ?? 0 })
 
       const es = new EventSource(`${API_URL}/demo/run/${data.run_id}/stream`)
@@ -145,7 +143,7 @@ export function DemoRunPage() {
       const key = Object.keys(responses).find((k) =>
         userMsg.toLowerCase().includes(k)
       )
-      const reply = responses[key] || responses.default
+      const reply = (key && responses[key as keyof typeof responses]) || responses.default
 
       setMessages((prev) => [...prev, { id: (Date.now() + 1).toString(), role: "assistant", text: reply }])
       setCopilotLoading(false)
