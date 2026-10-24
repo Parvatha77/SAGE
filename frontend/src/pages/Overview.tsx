@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react"
 import { getStats } from "../api/client"
 
+interface Stats {
+  total_cases: number
+  by_label: Record<string, number>
+  by_state: Record<string, number>
+}
+
 export function Overview() {
-  const [stats, setStats] = useState({ total_cases: 0, by_label: {}, by_state: {} })
+  const [stats, setStats] = useState<Stats>({ total_cases: 0, by_label: {}, by_state: {} })
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
