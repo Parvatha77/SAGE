@@ -1,0 +1,72 @@
+[
+  {
+    "id": "need-001",
+    "title": "Should universities mandate mindfulness programmes for student wellbeing?",
+    "source_name": "University Student Wellbeing Policy Unit",
+    "source_url": null,
+    "need_text": "We are reviewing whether mindfulness-based interventions should be made a standard offering for all enrolled students. We need a synthesis of current evidence on the effectiveness of mindfulness for improving psychological wellbeing, anxiety, and academic performance in university populations, and whether the evidence is strong enough to support a policy recommendation.",
+    "audience": "University senior leadership and student welfare committees",
+    "jurisdiction": "Higher Education (UK/Global)",
+    "deadline": "2026-12-01",
+    "topic_keywords": ["mindfulness", "university students", "wellbeing", "anxiety", "intervention"],
+    "population_of_interest": "University students",
+    "setting_of_interest": "Higher education institutions",
+    "is_example": true
+  },
+  {
+    "id": "need-002",
+    "title": "Evidence for social media limits in schools to protect student mental health",
+    "source_name": "Digital Wellbeing Taskforce",
+    "source_url": null,
+    "need_text": "We are preparing a policy brief for school governing bodies on whether restricting social media use during school hours improves student mental health outcomes. We need evidence on the relationship between social media use and psychological wellbeing, depression, and loneliness in students, and whether interventions targeting social media reduce harm.",
+    "audience": "School principals, governors, and local education authorities",
+    "jurisdiction": "Secondary Education",
+    "deadline": "2026-11-15",
+    "topic_keywords": ["social media", "mental health", "students", "depression", "loneliness", "addiction"],
+    "population_of_interest": "Secondary and university students",
+    "setting_of_interest": "Schools and universities",
+    "is_example": true
+  },
+  {
+    "id": "need-003",
+    "title": "Can mindfulness in the curriculum improve academic performance?",
+    "source_name": "Curriculum Development Authority",
+    "source_url": null,
+    "need_text": "We want to understand whether integrating mindfulness practice into the school or university curriculum leads to measurable improvements in academic performance, concentration, and self-regulation. The evidence will inform whether to pilot a structured mindfulness curriculum across three institutions.",
+    "audience": "Curriculum designers, teachers, and educational policymakers",
+    "jurisdiction": "Education (National)",
+    "deadline": null,
+    "topic_keywords": ["mindfulness", "academic performance", "concentration", "self-regulation", "curriculum"],
+    "population_of_interest": "Students aged 16-25",
+    "setting_of_interest": "Schools and universities",
+    "is_example": true
+  },
+  {
+    "id": "need-004",
+    "title": "Is online mindfulness as effective as in-person for student wellbeing?",
+    "source_name": "Student Services Digital Strategy Team",
+    "source_url": null,
+    "need_text": "Following the shift to online learning post-COVID, we need to know whether digital or online mindfulness-based programmes are as effective as face-to-face delivery for improving student psychological wellbeing and resilience. This will determine whether we scale our existing online offering or invest in in-person sessions.",
+    "audience": "University student services directors and e-learning teams",
+    "jurisdiction": "Higher Education",
+    "deadline": "2026-10-31",
+    "topic_keywords": ["online mindfulness", "digital intervention", "wellbeing", "COVID", "university students", "remote"],
+    "population_of_interest": "University students",
+    "setting_of_interest": "Online and blended learning environments",
+    "is_example": true
+  },
+  {
+    "id": "need-005",
+    "title": "Does excessive smartphone use harm student emotional wellbeing?",
+    "source_name": "Public Health Research Council",
+    "source_url": null,
+    "need_text": "We are preparing a public health guidance note on smartphone and internet use among students. We need a synthesis of research on the relationship between excessive smartphone or internet use and emotional wellbeing, stress, and academic outcomes, particularly to identify which populations are most at risk.",
+    "audience": "Public health officials, school counsellors, and parents",
+    "jurisdiction": "Public Health (National)",
+    "deadline": null,
+    "topic_keywords": ["smartphone", "internet", "excessive use", "emotional wellbeing", "stress", "students"],
+    "population_of_interest": "University and secondary school students",
+    "setting_of_interest": "General population / schools",
+    "is_example": true
+  }
+]

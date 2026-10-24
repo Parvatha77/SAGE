@@ -1,0 +1,16 @@
+{
+  "id": "chatcmpl-test456",
+  "object": "chat.completion",
+  "model": "llama-3.3-70b-versatile",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"claims\": [], \"empty_reason\": \"Abstract is an editorial with no empirical findings.\"}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {"prompt_tokens": 400, "completion_tokens": 30, "total_tokens": 430}
+}

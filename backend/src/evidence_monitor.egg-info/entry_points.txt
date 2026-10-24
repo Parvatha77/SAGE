@@ -1,0 +1,2 @@
+[console_scripts]
+evidence-monitor = evidence_monitor.cli:app

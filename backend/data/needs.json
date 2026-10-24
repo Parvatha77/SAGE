@@ -1,0 +1,58 @@
+[
+  {
+    "id": "need-001",
+    "title": "Mindfulness programmes in secondary schools",
+    "source_name": "EXAMPLE — Department for Education (illustrative)",
+    "source_url": null,
+    "need_text": "We are reviewing the evidence base for mindfulness-based interventions delivered in secondary school settings. We need a plain-language summary of what the research shows about effects on student wellbeing, academic outcomes, and mental health, and any limits or concerns about replication.",
+    "audience": "Policy analysts and school commissioners",
+    "jurisdiction": "England",
+    "deadline": "2027-03-31",
+    "topic_keywords": ["mindfulness", "wellbeing", "students", "schools", "mental health"],
+    "population_of_interest": "Secondary school students aged 11–18",
+    "setting_of_interest": "School-based",
+    "is_example": true
+  },
+  {
+    "id": "need-002",
+    "title": "Self-control interventions for adult behaviour change",
+    "source_name": "EXAMPLE — Behavioural Insights Team (illustrative)",
+    "source_url": null,
+    "need_text": "We are examining whether ego depletion and self-control findings translate reliably into adult behaviour-change programmes. We need a summary of current evidence, reproducibility concerns, and any findings that challenge the original ego depletion model.",
+    "audience": "Behavioural science advisers",
+    "jurisdiction": "United Kingdom",
+    "deadline": null,
+    "topic_keywords": ["ego depletion", "self-control", "behaviour change", "adults"],
+    "population_of_interest": "Working-age adults",
+    "setting_of_interest": "Workplace or community",
+    "is_example": true
+  },
+  {
+    "id": "need-003",
+    "title": "Employee wellbeing programmes — evidence review",
+    "source_name": "EXAMPLE — Cabinet Office Wellbeing Unit (illustrative)",
+    "source_url": null,
+    "need_text": "What does the research show about the effectiveness of structured wellbeing programmes for employees? We are particularly interested in outcomes for stress, engagement, and absence rates, and whether effects persist beyond the intervention period.",
+    "audience": "HR policy leads in central government",
+    "jurisdiction": "United Kingdom",
+    "deadline": "2027-06-30",
+    "topic_keywords": ["employee wellbeing", "workplace", "stress", "engagement", "mental health"],
+    "population_of_interest": "Adult employees",
+    "setting_of_interest": "Workplace",
+    "is_example": true
+  },
+  {
+    "id": "need-004",
+    "title": "Digital mental health tools for adolescents",
+    "source_name": "EXAMPLE — NHS England Digital Mental Health team (illustrative)",
+    "source_url": null,
+    "need_text": "We need a rapid evidence summary on smartphone apps and digital platforms used to support mental health in young people aged 12–25. We are interested in outcomes, safety signals, engagement rates, and any evidence comparing digital to face-to-face delivery.",
+    "audience": "NHS commissioners and clinical leads",
+    "jurisdiction": "England",
+    "deadline": "2026-12-01",
+    "topic_keywords": ["digital mental health", "apps", "adolescents", "young people", "smartphone"],
+    "population_of_interest": "Young people aged 12–25",
+    "setting_of_interest": "Remote or digital",
+    "is_example": true
+  }
+]

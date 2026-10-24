@@ -1,0 +1,11 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "DOI": "10.9999/clean.2020.001",
+    "title": ["A clean paper with no retractions"],
+    "update-to": [],
+    "relation": {}
+  }
+}

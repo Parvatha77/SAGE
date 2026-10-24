@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "count": 1,
+    "per_page": 25,
+    "page": 1,
+    "next_cursor": null
+  },
+  "results": [
+    {
+      "id": "https://openalex.org/W2741809807",
+      "doi": "https://doi.org/10.1016/j.paid.2017.07.011",
+      "title": "Mindfulness and well-being in students",
+      "abstract_inverted_index": {
+        "Mindfulness": [0],
+        "interventions": [1],
+        "have": [2],
+        "been": [3],
+        "shown": [4],
+        "to": [5, 8],
+        "improve": [6],
+        "student": [7],
+        "well-being": [9]
+      },
+      "publication_date": "2017-09-01",
+      "publication_year": 2017,
+      "primary_location": {
+        "source": {
+          "display_name": "Personality and Individual Differences",
+          "host_organization_name": "Elsevier"
+        }
+      },
+      "publisher": "Elsevier",
+      "authorships": [
+        {"author": {"display_name": "Alice Researcher"}},
+        {"author": {"display_name": "Bob Scholar"}}
+      ],
+      "referenced_works": [
+        "https://openalex.org/W2000000001",
+        "https://openalex.org/W2000000002"
+      ],
+      "cited_by_count": 142,
+      "type": "article",
+      "is_retracted": false,
+      "language": "en"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+paper_id,paper_title,abstract,source_sentence,claim_text,population,design,sample_size,effect_reported,correct_claim (y/n),source_exact (y/n),any_invented_detail (y/n),notes
+p1,Paper A,Abstract A,Source A,Claim A,students,RCT,100,d=0.4,y,y,n,
+p2,Paper B,Abstract B,Source B,Claim B,adults,survey,200,r=0.3,y,y,n,
+p3,Paper C,Abstract C,Source C,Claim C,children,cohort,50,,n,y,n,needs revision
+p4,Paper D,Abstract D,Source D,Claim D,teachers,RCT,80,p<0.05,y,n,y,source slightly off

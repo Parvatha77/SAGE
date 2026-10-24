@@ -1,0 +1,16 @@
+{
+  "id": "chatcmpl-bad",
+  "object": "chat.completion",
+  "model": "llama-3.3-70b-versatile",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "NOT VALID JSON {"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {"prompt_tokens": 400, "completion_tokens": 5, "total_tokens": 405}
+}

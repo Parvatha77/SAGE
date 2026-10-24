@@ -1,0 +1,20 @@
+{
+  "status": "ok",
+  "message-type": "work",
+  "message-version": "1.0.0",
+  "message": {
+    "DOI": "10.1016/j.paid.2017.07.011",
+    "title": ["Mindfulness and well-being in students"],
+    "update-to": [
+      {
+        "type": "retraction",
+        "DOI": "10.1016/j.paid.2022.01.001",
+        "updated": {
+          "date-parts": [[2022, 1, 15]],
+          "date-time": "2022-01-15T00:00:00Z"
+        }
+      }
+    ],
+    "relation": {}
+  }
+}

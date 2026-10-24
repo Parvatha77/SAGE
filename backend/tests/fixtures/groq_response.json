@@ -1,0 +1,20 @@
+{
+  "id": "chatcmpl-test123",
+  "object": "chat.completion",
+  "model": "llama-3.3-70b-versatile",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"claims\": [{\"claim_text\": \"An 8-week mindfulness programme significantly reduced anxiety in secondary school students.\", \"source_sentence\": \"an 8-week mindfulness programme reduced anxiety scores significantly (d = 0.38, p < 0.01) compared to an active control at 3-month follow-up.\", \"direction\": \"positive\", \"effect_reported\": \"d = 0.38, p < 0.01\", \"population\": \"secondary students aged 13-16\", \"country_or_setting\": \"UK\", \"design\": \"cluster randomised trial\", \"outcome_measure\": \"anxiety scores\", \"sample_size\": 412, \"sample_size_text\": \"412 secondary students\", \"follow_up\": \"3-month\", \"is_primary_claim\": true, \"extraction_confidence\": \"high\", \"confidence_note\": null}], \"empty_reason\": null}"
+      },
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 850,
+    "completion_tokens": 180,
+    "total_tokens": 1030
+  }
+}
